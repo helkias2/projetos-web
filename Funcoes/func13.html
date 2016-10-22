@@ -1,0 +1,30 @@
+<script>
+
+// window.onload = function(){
+// 	doceument.getElementByIb("1").onclick = function(){
+// 		alert("teste");
+// 	}
+// }
+// teste = function(){
+// 	alert("teste");
+// }
+
+//ica a funcoes
+var global = 0;
+var tabuada = parseInt(prompt("Escolha a tabuada"));
+//debugger
+switch(tabuada){
+	case 1:
+		function mult(mensagem){
+			document.write(global + " X " + mensagem + " = " + (global * mensagem) + " <br> ");
+			global = global + 1;
+			if(global < 10){
+				mult(mensagem);	
+			}		
+}
+var numero = parseInt(prompt("Entre valor: "));
+mult(numero);
+break;
+}
+
+</script>

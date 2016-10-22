@@ -1,0 +1,27 @@
+
+	<p id="demo"> testo </p>
+
+	
+	<script>
+	debugger
+		var a = prompt("Entre com valor");
+		var b = parseInt(a);
+		//array com tres nomes
+		var hunks = ['toni', 'Marcos', 'Fernanda', 'MARIA'];
+
+		var hunkcontador = hunks.length;
+			// var = i variavel, condicao  i < 3, incremente  = incremento+1 
+		for(var i = 0; i < hunkcontador; i++){
+			console.log(hunks[i] + (', Nomes'));
+		}
+		
+		function myFunction(b){
+		 return (b+ 10);
+		}
+
+		show(aler("Valos"));
+		window.alert(" Valor " + myFunction(b) );	
+		document.getElementById("demo").innerHTML = myFunction(b);
+
+
+	</script>

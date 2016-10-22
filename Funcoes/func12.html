@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function power(base, exponent){
+			if(exponent == 0){
+				return 1;
+			}else{
+				return base * power(base, exponent -1);
+			}
+		}
+		document.write(power(2,5) + "<br>");
+	</script>
+
+<!-- <script type="text/javascript">
+	function frango(){
+		return ovo();}
+	function ovo(){
+		return frango();}
+	document.write(frango() + "Quem nasceu primeiro?"); 
+</script> -->
+<script type="text/javascript">
+	 debugger
+	 function addfuncoes(amount){
+		
+		return function(number){
+			return number + amount;
+
+		};
+	} 
+	document.write(addfuncoes( 4 ,20))
+</script>
+<script type="text/javascript">
+	var add = function(a,b){
+		return a +b;
+	} 
+	document.write(add(5,5));
+</script>
+</body>
+</html>

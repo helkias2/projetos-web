@@ -1,0 +1,32 @@
+<script>
+ //variavel global
+ var global = 0;
+ //funcao leia que tem agumento
+ var leia = function(mensagem){
+ 	document.writeln(mensagem + "<br>");
+ }
+ //funcao com 3 agumentos
+ var  escreva = function(multiplicar, mensagem, interador){
+ 	//estou passando os agumentos em expressao matematica 
+ 	leia(multiplicar + mensagem + (multiplicar * interador));
+ 	
+ 	if(interador < 10){
+ 		escreva(multiplicar, " X " + interador + " = ", (interador + 1));
+ 	}
+ 	
+ 	//document.write(mensagem + "<br>");
+ 	}
+ 	leia("Digite:" );
+ 	leia("1 - tabuada do 1 ");
+ 	leia("2 - tabuada do 2 ");
+ 	var a = prompt();
+
+ 	//global = global + 1;
+
+
+ 	if(a == 1 || a == 2){
+ 		escreva(a, " X 1 = ",  1);
+ }else{
+ 	escreva("Opcao invalida");
+ }
+</script>

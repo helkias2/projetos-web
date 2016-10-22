@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+//funcoes que nao retonao valores
+
+	
+	function multiplica(){
+	var tabuada = parseInt(prompt("Entre com numero"));
+	for(var i = 1; i<=10; i++){
+		document.write(tabuada + " X " + i + " = " + (tabuada * i) + " <br>");
+
+	}
+}
+function adicao(){
+	var tabuada = parseInt(prompt("Entre com numero"));
+	for(var i = 1; i<=10; i++){
+		document.write(tabuada + " + " + i + " = " + (tabuada + i) + " <br>");
+
+	}
+}
+debugger
+var escolha = prompt("Escolha a sua tabuada: ");
+switch(escolha){
+	case "1":
+		multiplica();
+		break;
+	case "2":
+	adicao();
+	 break;
+}
+
+</script>
+</body>
+</html>

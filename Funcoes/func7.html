@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<title> teste de funcoes </title>
+	</head>
+	<body>
+	
+		<p> Click no boato para realizar o loop</p>
+
+		<button onclick="myFunction()"> Click me </button>	
+		<p id="demo"></p> 
+		<script>
+
+		function myFunction(){
+			var x =" ", i = 0;
+
+			for(i = 0; i<10; i++){
+				if(i == 3){
+					break;
+				}
+				x = x + " numero = " + i + " <br> ";
+
+			}
+
+			document.getElementById("demo").inner = x;
+			console.log(x);
+		}
+		</script> 
+	</body>
+
+</html>

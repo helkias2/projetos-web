@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+	<script>
+
+	//funcao recursiva
+	var globalindex = 0;
+	function escrevedonatela(mensagem){
+		document.write(globalindex + " X " +  mensagem + " = " + (globalindex * mensagem) + "<br>");
+		
+		globalindex += 1;
+		if(globalindex < 10){
+		escrevedonatela(mensagem);
+		}
+	}
+	numero = parseInt(prompt("Entre com valor"));
+	escrevedonatela(numero); 
+
+	 // var debounce = function (func, threshold, execAsap) {
+	 //      var timeout;
+
+	 //      return function debounced () {
+	 //          var obj = this, args = arguments;
+	 //          function delayed () {
+	 //              if (!execAsap)
+	 //                  func.apply(obj, args);
+	 //              timeout = null;
+	 //          };
+
+	</script>          
+</body>
+</html>
